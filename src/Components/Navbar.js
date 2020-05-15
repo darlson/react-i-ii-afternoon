@@ -1,8 +1,10 @@
 import React from 'react'
 
-export default function Navbar () {
+export default function Navbar (props) {
 
     return (
-        <h1>Home</h1>
+        <div className='App-header'>
+            <button className='home' onClick={props.home}>Home</button>
+        </div>
     )
 }
